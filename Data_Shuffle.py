@@ -1,15 +1,5 @@
 import numpy as np
 
-# array = np.array([[1, 2], [6, 4], [2, 1], [3, 4], [7, 1], [2, 9]])
-#
-# print(array)
-#
-# print('\n')
-#
-# np.random.shuffle(array)
-#
-# print(array)
-
 
 def shuffling():
 
