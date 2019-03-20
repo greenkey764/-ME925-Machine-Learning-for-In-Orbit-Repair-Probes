@@ -15,7 +15,7 @@ image_shape = (image_size, image_size)
 image_channels = 1
 
 learn_rate = 0.0005
-epochs = 4
+epochs = 8
 batches = 9
 sub_batches = 20
 
@@ -156,7 +156,7 @@ with tf.Session() as sess:
             tracked_steps.append(step)
 
             if len(trained_acc) > 4:
-                if all(r > 0.86 for r in valid_acc[-3:-1]) and all(o > 0.86 for o in trained_acc[-3:-1]):
+                if all(r > 0.95 for r in valid_acc[-3:-1]) and all(o > 0.95 for o in trained_acc[-3:-1]):
 
                     broken = True
                     break
